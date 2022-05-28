@@ -23,9 +23,9 @@ class Main(Frame):
 
 		x = 10
 		y = 140
-		for btn in buttons:
-			com = lambda f=btn: self.logicalc(f)
-			Button(text=btn, bg='#e9e9e9', font=('Arial', 16), command=com).place(x=x, y=y, width=90, height=78)
+		for i in buttons:
+			com = lambda f=i: self.logicalc(f)
+			Button(text=i, bg='#e9e9e9', font=('Arial', 16), command=com).place(x=x, y=y, width=90, height=78)
 			x += 92
 			if x > 300:
 				x = 10
